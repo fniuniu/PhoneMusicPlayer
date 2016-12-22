@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+		<title>手机音乐</title>
+		<link href="css/phoneMPstyle.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		<div class="play-container">
+
+			<audio id="id-audio-player">
+				<source src="songs/Yesterday Once More.mp3">
+			</audio>
+
+			<div class="songs-list">
+				<ul class='songs-list vertical-center'>
+	                <li class='single-song current-song'>Yesterday Once More.mp3</li>
+	                <li class='single-song'>绝世.mp3</li>
+	                <li class='single-song'>早知如此.mp3</li>
+					<li class='single-song'>每当那样时.mp3</li>
+	            </ul>
+			</div>
+
+			<p class="player-name">Phone Music Player</p>
+
+			<div class="slider green"></div>
+
+			<div id="id-player-time">
+				<time class="time-current">0:00</time>
+	            <time class="time-duration">0:00</time>
+			</div>
+
+			<div class="message-text line">
+				<h1 id="id-song-title">Yesterday Once More</h1>
+				<h2 id="id-singer">Carpenters</h2>
+			</div>
+
+			<div class="vol-ly line">
+				<div id="id-lyric">
+					<p class="show-lyric">When I was young I'd listen to the radio</p>
+					<p class="show-lyric">Waiting for my favorite songs</p>
+					<p class="show-lyric">When they played I'd sing along,</p>
+					<p class="show-lyric">It make me smile.</p>
+					<p class="show-lyric">Those were such happy times and not so long ago</p>
+					<p class="show-lyric">How I wondered where they'd gone.</p>	　　
+　　			  </div>
+				<div class="slider volume white"></div>
+			</div>
+
+			<div class="play-controls line">
+
+				<div class="play-prev triangle button" data-action="prev"></div>
+				<div class="circle-play button" data-action="play">
+					<div class="triangle-c"></div>
+					<div class="rectangle first off"></div>
+					<div class="rectangle second off"></div>
+				</div>
+				<div class="play-next triangle button" data-action="next"></div>
+
+			</div>
+
+
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/phoneMusicPlayer.js"></script>
+
+</body>
+</html>
